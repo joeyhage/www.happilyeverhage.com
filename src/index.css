@@ -1,0 +1,299 @@
+/* DARKEST PINK    #460d26  */
+/* DARKER PINK     #73133d  */
+/* DARK PINK       #9e1b55  */
+/* PINK            #ca226c  */
+/* LIGHT PINK      #f0a8c8  */
+/* LIGHTEST PINK   #fbe9f1  */
+
+/* DARKEST BLUE    #06182b  */
+/* DARKER BLUE     #0c325a  */
+/* DARK BLUE       #134b86  */
+/* BLUE            #1964b3  */
+/* LIGHT BLUE      #a5cbf3  */
+/* LIGHTEST BLUE   #e9f2fc  */
+
+/* GOLD            #b7a652 */
+
+html {
+  height: 100%;
+  background-color: #06182b !important;
+}
+* {
+  font-family: 'Questrial', sans-serif;
+  letter-spacing: .04em;
+}
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body div#root > div.container {
+  color: #fff;
+}
+.is-uppercase {
+  letter-spacing: 2px;
+}
+.great-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+#our-wedding-page, #details-page, #registry-page {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Navigation */
+nav.navbar {
+  border-bottom: 1px solid #fff;
+}
+.navbar-start > a.navbar-item, a.navbar-link {
+  font-weight: 600;
+  z-index: 1;
+}
+.navbar-link:not(.is-arrowless)::after {
+  border-color: #fff;
+}
+nav, .navbar-start, .navbar-menu, a.navbar-item, a.is-page-link, .navbar-dropdown {
+  color: #fff;
+  background-color: #06182b !important;
+}
+a.navbar-item, a.is-page-link {
+  color: #fff !important;
+}
+a.is-page-link {
+  font-size: 1em;
+}
+a.navbar-item.is-hidden-touch {
+  font-size: .8em;
+}
+a.is-page-link.is-active, a.is-page-link.is-active:hover, a.is-page-link.is-active:focus,
+.navbar-dropdown a.navbar-item:hover, a.is-page-link:hover {
+  color: #b7a652 !important;
+}
+.navbar-start {
+  flex-grow: 1;
+  justify-content: center;
+}
+.navbar-brand > .navbar-burger.burger {
+  color: #fff !important;
+  margin: auto 5px auto auto;
+}
+.navbar-brand > .navbar-burger.burger > p {
+  margin: 5px 0 0 5px;
+}
+footer {
+  color: #fff;
+  background-color: #06182b !important;
+  border-top: 1px solid #fff;
+  padding-bottom: 4rem !important;
+}
+footer .content p {
+  margin-bottom: 0 !important;
+  font-size: .8em;
+  font-weight: 600;
+}
+
+/* Our Wedding Page */
+#our-wedding-page h2 {
+  text-align: center;
+  color: #b7a652;
+}
+#our-wedding-page .quick-link img {
+  width: 5em;
+  margin: .5em .5em 0 .5em;
+}
+#our-wedding-page a {
+  text-align: center;
+  color: #fff;
+  display: block;
+}
+#our-wedding-page .columns:first-child .quick-link {
+  margin-top: 5em;
+}
+#our-wedding-page .columns:last-child .quick-link {
+  margin-bottom: 5em;
+}
+#our-wedding-page .quick-link {
+  border-radius: 50%;
+  background-color: #460d26;
+  height: 10em;
+  width: 10em;
+  border: 2px solid #b7a652;
+}
+#our-wedding-page .quick-link:hover, #our-wedding-page .quick-link:active:hover,
+#our-wedding-page .quick-link:active {
+  box-shadow: 0 1px 3px 0 #433f18, 0 4px 8px 3px #433f18;
+  background-color: #5b0f33;
+}
+#our-wedding-page .quick-link h2, #our-wedding-page #names h2 {
+  font-family: 'Great Vibes', cursive;
+  color: #fff;
+}
+#our-wedding-page .details img {
+  margin-top: .4em;
+}
+#our-wedding-page .rsvp img {
+  margin-top: 1.1em;
+  margin-bottom: .4em;
+}
+#our-wedding-page .registry img {
+  margin-top: .2em;
+  width: 6em;
+}
+#our-wedding-page .photos img {
+  margin-top: .8em;
+  width: 6em;
+}
+#our-wedding-page .burgundy {
+  background-color: #460d26;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+}
+#our-wedding-page .burgundy h2 {
+  display: inline-flex;
+  vertical-align: middle;
+  line-height: normal;
+}
+#our-wedding-page #names {
+  height: 10em;
+  line-height: 10em;
+  text-align: center;
+}
+#our-wedding-page #names h2 {
+  color: #fff;
+  display: inline-flex;
+  vertical-align: middle;
+  line-height: normal;
+}
+#our-wedding-page .hashtag {
+  margin: 1em 0 3em 0;
+}
+#our-wedding-page > img:first-of-type {
+  width: 100vw;
+  margin-bottom: -0.4em;
+}
+
+/* Details Page */
+#details-page .column:not(.is-narrow) {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+}
+.details-dropdown.show {
+  margin-bottom: 2em;
+}
+#details-page .details-dropdown h5 {
+  cursor: pointer;
+}
+#details-page .columns:last-of-type {
+  margin-bottom: 2em;
+}
+#details-page h5 {
+  text-align: center;
+  font-weight: 600;
+  color: #b7a652;
+  margin-bottom: 1em;
+}
+#details-page p, #details-page a {
+  text-align: center;
+  color: #fff;
+}
+#details-page img {
+  width: 10em;
+  border-radius: 50%;
+  display: flex;
+  margin: 1em auto;
+}
+
+/* Registry Page */
+#registry-page h2 {
+  text-align: center;
+}
+#registry-page .burgundy {
+  background-color: #460d26;
+  height: 5em;
+  line-height: 5em;
+  text-align: center;
+}
+#registry-page .burgundy h2 {
+  display: inline-flex;
+  vertical-align: middle;
+  line-height: normal;
+  color: #b7a652;
+}
+#registry-page .registry-link {
+  margin: 0 2em 2em 2em;
+}
+#registry-page .registry-link img {
+  width: 10em;
+  border-radius: 50%;
+  display: flex;
+  margin: .5em auto;
+}
+#registry-page .registry-link img:hover, #registry-page .registry-link img:active:hover,
+#registry-page .registry-link img:active {
+  box-shadow: 0 1px 3px 0 #888, 0 4px 8px 3px #888;
+}
+#registry-page .registry-link h2 {
+  text-align: center;
+  color: #fff;
+}
+#registry-page .registry-link h2:hover {
+  text-decoration: underline;
+}
+#registry-page .favorites h2 {
+  color: #b7a652;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+}
+#registry-page .favorites h3 {
+  font-size: 1.2em;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+#registry-page > .columns.is-centered:last-of-type {
+  margin-bottom: 3em;
+}
+
+/* RSVP Page */
+#rsvp-page h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  margin: 5em auto;
+}
+
+@media screen and (max-width: 1087px) {
+  .navbar-link:not(.is-arrowless)::after {
+    display: none;
+  }
+
+  #our-wedding-page > img:first-of-type {
+    content: url("https://lh3.googleusercontent.com/B4EYyqGS7GjeWpk4ztYsnYihqjcKaqGeSCbn8FCi6y2r4lFY4pd8afHsKBkvI4tVMKtAujFSPGBM9rgVmDocn00R6OikH4LrbzeE5XfVYnjN_Yz8PGTqNuHQVK6WLFccNm75sWne_4OXqIGp7cpC1xoY7LMFDC187ycdnDrmW4pnr6tV5Uj2vTTQqVm-xJFlrmkdPLoJOYSGrAXmtRsfVC_rCvZ9DUgNzWTpObV5ep8-c8NS3q7PVnZrWuGCuM04ggXKYdCdNX13hudXJskt499jBCxqDgOMCIaD5idnsC7A8mM5qLXm114YT5U-GB1TklgQbwtLKnk0omVyiznNgrcD-EikgACrpiN5qahN-Xcj9Mb4IVF4hrlsXBxyDkRNteqjANNZow7za71lWLKXnT_DLT75ocwnSzlet2cWcGW2TenuczJJDt0UQYHnxjWKQRXoO23LQzOu9L_FOSIBXumwGOko-l0dy-_IwzTPPXLlAhwSgvyotVO3XfMmfO19vvfYKKAvr7FnFw8YZS79Fj7136MAjjby1yicN-ha_9RwFnNVsxjIaLoOGdv5X_N8eHZ9JPRgnFJ7IhCqMJqoDClMcj9rV0gRRdmiYkKgoUwAyOTxDimWe1IRFxFhFeDNsNoTg6miXjoi6OivvP_pzFwLcLhiE77270Ig7fzCWE2L0K137qLP_BsBnQLaTKnVuhCIf4EOtMLQtp4tbNsLi4xa=w2560-h960-no");
+  }
+}
+@media screen and (max-width: 768px) {
+  #our-wedding-page > img:first-of-type {
+    content: url("https://lh3.googleusercontent.com/yHXM9SuLystaGBXG5WZA8X2sTJyuD4VymTRcNuZx0AzZ-J4ZcOt0qNy1CedW0YdbCD_HZ9ofvSYiyE7yTK4hdsFwMuqlnw1Qyi-mK16Ovh827Q9fstzoNUE6zNTNtsBLDC-Sr0pwAeMQCdBhvyqXST5dOudGt56jjhl5zeDVNhcjmJgnV_RdEj592WKOpGNrWx6zHs4zYGZc-rujy8Iqfslo7dU-d6WW1qxZtEfdCgA8YecMavKXSPdkSbezbffOSi63E5tojNi4THvGeewTMBPnPO5HbLeoXb77a3QuqIpRLwYiVFpteeOOCjYJCsocHhlqwBn6x_JE6U2VeB_eXuSBoe424EuCzr7QIz8W1M2mDVtpcoznd7rAeIvkp8XxI7LqU5vxLbdRqr0GVo3_dn8FsEHo0frjkBn8SLDm86__8zVYHT8Ae57nngDL15CmT2E37fKw2vzyc5vd5sCsWG8b5otxuXS_zU57ZAE5SD03FWMk6o7bNtdvGcEhW5RxKjGL5qzn08ylqo8DXsxypi2-D4FNL-Mq7jiPWO7uc4qXNZ5GyvV1Wwv55maiGw3fMavKKJLhkwEcjxF_f5EfJBgCPvSb6C7_wZJxHHlaMtrsaC0Rt7Utd7RHoQLK3vMFPnmawYs8nV4AaYsHyggfxBWmpHNr3SyQ7LxlBp7l0VNCRsZVN4pHQG5vNMdSv-negdh9TjEoi8k1lKOUOCXCdyeE=w1420-h947-no");
+  }
+}
+@media screen and (min-width: 769px) {
+  #details-page .column:first-child:not(.is-narrow) {
+    border-right: 2px solid #fff;
+  }
+}
+@media screen and (min-width: 1088px) {
+  body div#root > div {
+    position: relative;
+    top: 13px;
+  }
+
+  .navbar-start > a.navbar-item.is-size-3 {
+    margin: 0 .75em;
+  }
+
+  #our-wedding-page > img:first-of-type {
+    content: url("https://lh3.googleusercontent.com/B4EYyqGS7GjeWpk4ztYsnYihqjcKaqGeSCbn8FCi6y2r4lFY4pd8afHsKBkvI4tVMKtAujFSPGBM9rgVmDocn00R6OikH4LrbzeE5XfVYnjN_Yz8PGTqNuHQVK6WLFccNm75sWne_4OXqIGp7cpC1xoY7LMFDC187ycdnDrmW4pnr6tV5Uj2vTTQqVm-xJFlrmkdPLoJOYSGrAXmtRsfVC_rCvZ9DUgNzWTpObV5ep8-c8NS3q7PVnZrWuGCuM04ggXKYdCdNX13hudXJskt499jBCxqDgOMCIaD5idnsC7A8mM5qLXm114YT5U-GB1TklgQbwtLKnk0omVyiznNgrcD-EikgACrpiN5qahN-Xcj9Mb4IVF4hrlsXBxyDkRNteqjANNZow7za71lWLKXnT_DLT75ocwnSzlet2cWcGW2TenuczJJDt0UQYHnxjWKQRXoO23LQzOu9L_FOSIBXumwGOko-l0dy-_IwzTPPXLlAhwSgvyotVO3XfMmfO19vvfYKKAvr7FnFw8YZS79Fj7136MAjjby1yicN-ha_9RwFnNVsxjIaLoOGdv5X_N8eHZ9JPRgnFJ7IhCqMJqoDClMcj9rV0gRRdmiYkKgoUwAyOTxDimWe1IRFxFhFeDNsNoTg6miXjoi6OivvP_pzFwLcLhiE77270Ig7fzCWE2L0K137qLP_BsBnQLaTKnVuhCIf4EOtMLQtp4tbNsLi4xa=w2560-h960-no");
+  }
+}
