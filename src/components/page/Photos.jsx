@@ -23,7 +23,9 @@ class Photos extends Component {
     return (
       <div className='container'>
         <Helmet>
-          <title>Photos - Abby Hanson & Joey Hage&apos;s Wedding</title>
+          <title>Photos - Abby Hanson and Joey Hage&apos;s Wedding</title>
+          <meta name='description'
+                content='Engagement photos of Abby Hanson and Joey Hage. They are getting married on November 9th, 2019 in West Des Moines, IA. #ToHageAndToHold' />
         </Helmet>
         <Gallery photos={images} columns={Photos.columns} direction='column' onClick={this.openLightbox} />
         <Lightbox images={images}

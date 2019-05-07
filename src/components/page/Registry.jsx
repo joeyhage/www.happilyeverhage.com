@@ -1,9 +1,9 @@
-import classNames from 'classnames';
 import React, { Component } from 'react';
+import classNames from 'classnames';
 import { Helmet } from 'react-helmet';
 
-import registryLinks from '../../resources/registry-page/registry-links';
 import registryIcons from '../../resources/registry-page/registry-icons';
+import registryLinks from '../../resources/registry-page/registry-links';
 
 const RegistryLink = props => {
   const registryLinkClasses = classNames('registry-link', props.children.toLowerCase());
@@ -25,14 +25,13 @@ class Registry extends Component {
 
   render() {
     return (
-      <div id='registry-page'>
+      <div className='is-clipped' id='registry-page'>
         <Helmet>
-          <title>Registry - Abby Hanson & Joey Hage&apos;s Wedding</title>
+          <title>Registry - Abby Hanson and Joey Hage&apos;s Wedding</title>
+          <meta name='description' content='Your presence at our wedding is the greatest gift of all. However, we have a few registries and favorite places listed for your convenience.' />
         </Helmet>
         <div className='burgundy'>
-          <h2 className='is-size-1 great-vibes'>
-            Registry
-          </h2>
+          <h2 className='is-size-1 great-vibes'>Registry</h2>
         </div>
         <div className='columns is-centered'>
           <div className='column is-6-desktop is-8-tablet is-12-mobile'>
@@ -46,8 +45,8 @@ class Registry extends Component {
         </div>
         <div className='container'>
           <div className='columns is-centered'>
-            <RegistryLink link={registryLinks.zola} img={registryIcons.zola} alt='Zola'>
-              Zola
+            <RegistryLink link={registryLinks.amazon} img={registryIcons.amazon} alt='Amazon'>
+              Amazon
             </RegistryLink>
             <RegistryLink link={registryLinks.anthropologie} img={registryIcons.anthropologie} alt='Anthropologie'>
               Anthropologie

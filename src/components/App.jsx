@@ -40,8 +40,11 @@ class App extends Component {
   }
 
   static handleInvite({ location }) {
-    if (/^#[a-fA-F0-9-]{36}$/.test(location.hash)) {
-      localStorage.setItem('invitationID', location.hash.substring(1));
+    if (location.hash) {
+      const invitationID = location.hash.substring(1);
+      if (RSVP.isValidInvitationID(invitationID)) {
+        localStorage.setItem('invitationID', location.hash.substring(1));
+      }
     }
   }
 }

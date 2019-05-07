@@ -9,9 +9,10 @@ class Details extends Component {
 
   render() {
     return (
-      <div id='details-page' className='container'>
+      <div className='container is-clipped' id='details-page'>
         <Helmet>
-          <title>Details - Abby Hanson & Joey Hage&apos;s Wedding</title>
+          <title>Details - Abby Hanson and Joey Hage&apos;s Wedding</title>
+          <meta name='description' content='The wedding mass will begin at 11:00 AM on November 9th, 2019 in West Des Moines, IA with a reception to follow in Indianola, IA.' />
         </Helmet>
         <div className='columns is-centered'>
           <div className='column'>

@@ -64,8 +64,8 @@ class Navbar extends React.Component {
                   Registry
                 </Link>
                 <div className='navbar-dropdown'>
-                  <a href={registryLinks.zola} className='navbar-item' target='_blank' rel='noopener noreferrer'>
-                    Zola
+                  <a href={registryLinks.amazon} className='navbar-item' target='_blank' rel='noopener noreferrer'>
+                    Amazon
                   </a>
                   <a href={registryLinks.target} className='navbar-item' target='_blank' rel='noopener noreferrer'>
                     Target
