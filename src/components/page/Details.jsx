@@ -12,7 +12,8 @@ class Details extends Component {
       <div className='container is-clipped' id='details-page'>
         <Helmet>
           <title>Details - Abby Hanson and Joey Hage&apos;s Wedding</title>
-          <meta name='description' content='The wedding mass will begin at 11:00 AM on November 9th, 2019 in West Des Moines, IA with a reception to follow in Indianola, IA.' />
+          <meta name='description'
+                content='The wedding mass will begin at 11:00 AM on November 9th, 2019 in West Des Moines, IA with a reception to follow in Indianola, IA.' />
         </Helmet>
         <div className='columns is-centered'>
           <div className='column'>
@@ -52,16 +53,18 @@ class Details extends Component {
           Reservations can be made until October 7th, 2019 under The Hanson-Hage Wedding.<br />
           <br />
           <b>The West Des Moines Marriott</b><br />
+          <em>Room block not available yet, please check back soon</em><br />
           <a href='https://goo.gl/maps/Zh4rFHHaGWS2' target='_blank' rel='noopener noreferrer'>
             1250 Jordan Creek Pkwy<br />
             West Des Moines, IA 50266</a><br />
-          <a href='tel:515-267-1500'>(515) 267-1500</a><br />
+          <a href='tel:515-267-1500'>Hotel: (515) 267-1500</a><br />
+          <a href='tel:1-888-236-2427'>Reservations: 1 (888) 236-2427</a><br />
           <br />
           <b>Best Western Plus Des Moines West Inn & Suites</b><br />
           <a href='https://goo.gl/maps/Ldj9NmU18GM2' target='_blank' rel='noopener noreferrer'>
             1450 NW 118th St.<br />
             Clive, IA 50325</a><br />
-          <a href='tel:515-221-2345'>(515) 221-2345</a><br />
+          <a href='tel:515-221-2345'>Hotel & Reservations: (515) 221-2345</a><br />
         </Dropdown>
         <Dropdown title='RSVP'>
           Please kindly let us know if you will be able to celebrate with us by October 1st, 2019. You can
