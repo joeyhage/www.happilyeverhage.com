@@ -50,15 +50,17 @@ class Details extends Component {
         </div>
         <Dropdown title='Accommodations'>
           November 8th and/or November 9th<br />
-          Reservations can be made until October 7th, 2019 under The Hanson-Hage Wedding.<br />
+          Reservations can be made until October 18th, 2019 under The Hanson-Hage Wedding.<br />
           <br />
           <b>The West Des Moines Marriott</b><br />
-          <em>Room block not available yet, please check back soon</em><br />
           <a href='https://goo.gl/maps/Zh4rFHHaGWS2' target='_blank' rel='noopener noreferrer'>
             1250 Jordan Creek Pkwy<br />
             West Des Moines, IA 50266</a><br />
           <a href='tel:515-267-1500'>Hotel: (515) 267-1500</a><br />
-          <a href='tel:1-888-236-2427'>Reservations: 1 (888) 236-2427</a><br />
+          <a href='https://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Hanson%20/%20Hage%20Wedding%20Nov%202019%5Edsmwd%60HGWHGWA%7CHGWHGWB%60119%60USD%60false%605%6011/8/19%6011/10/19%6010/18/19&app=resvlink&stop_mobi=yes'
+             target='_blank' rel='noopener noreferrer'>
+            Reservations: Click here
+          </a><br />
           <br />
           <b>Best Western Plus Des Moines West Inn & Suites</b><br />
           <a href='https://goo.gl/maps/Ldj9NmU18GM2' target='_blank' rel='noopener noreferrer'>

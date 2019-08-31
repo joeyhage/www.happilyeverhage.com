@@ -97,6 +97,7 @@ class RSVP extends Component {
     sessionStorage.removeItem('invitation');
     localStorage.removeItem('invitationID');
     this.setState({ search: '', invitation: null, loading: false, message: null });
+    window.scrollTo(0, 0);
   }
 
   saveRsvp() {
