@@ -57,7 +57,11 @@ class ViewRSVP extends Component {
                       <button className='button' onClick={onNewRsvp}>Find Another Invitation</button>
                     </React.Fragment>
                  )
-                 : <button className='button save' value='save' onClick={onRsvpChange}>Save</button>
+                 : (<React.Fragment>
+                      <button className='button save' value='save' onClick={onRsvpChange}>Save</button>
+                      <button className='button' onClick={onNewRsvp}>Not you? Return to search</button>
+                    </React.Fragment>
+                 )
                 }
               </div>
             </div>
