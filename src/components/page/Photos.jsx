@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import Gallery from 'react-photo-gallery';
-import Lightbox from 'react-images';
+import Carousel, { Modal, ModalGateway } from 'react-images';
 
 import images from '../../resources/photos-page/images';
 
@@ -15,8 +15,6 @@ class Photos extends Component {
     };
     this.closeLightbox = this.closeLightbox.bind(this);
     this.openLightbox = this.openLightbox.bind(this);
-    this.gotoNext = this.gotoNext.bind(this);
-    this.gotoPrevious = this.gotoPrevious.bind(this);
   }
 
   render() {
@@ -28,13 +26,20 @@ class Photos extends Component {
                 content='Engagement photos of Abby Hanson and Joey Hage. They are getting married on November 9th, 2019 in West Des Moines, IA. #ToHageAndToHold' />
         </Helmet>
         <Gallery photos={images} columns={Photos.columns} direction='column' onClick={this.openLightbox} />
-        <Lightbox images={images}
-                  onClose={this.closeLightbox}
-                  onClickPrev={this.gotoPrevious}
-                  onClickNext={this.gotoNext}
-                  currentImage={this.state.currentImage}
-                  isOpen={this.state.lightboxIsOpen}
-        />
+        <ModalGateway>
+          {this.state.lightboxIsOpen ? (
+            <Modal onClose={this.closeLightbox}>
+              <Carousel
+                currentIndex={this.state.currentImage}
+                views={images.map(x => ({
+                  ...x,
+                  srcset: x.srcSet,
+                  caption: x.title
+                }))}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
       </div>
     );
   }
@@ -51,14 +56,6 @@ class Photos extends Component {
       currentImage: 0,
       lightboxIsOpen: false
     });
-  }
-
-  gotoPrevious() {
-    this.setState({ currentImage: this.state.currentImage - 1 });
-  }
-
-  gotoNext() {
-    this.setState({ currentImage: this.state.currentImage + 1 });
   }
 
   static columns(containerWidth) {
